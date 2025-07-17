@@ -9,12 +9,12 @@ function App() {
 
   return (
     <div className="spa">
-    <NavBar />
-    <LandingPage />
-    <ProjectsPage />
-    <ConsistencyPage />
-    <Resume />
-    <AboutMe />
+      <NavBar />
+      <LandingPage />
+      <ProjectsPage />
+      <ConsistencyPage />
+      <Resume />
+      <AboutMe />
     </div>
   );
 }
