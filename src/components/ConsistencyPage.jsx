@@ -14,7 +14,7 @@ function run() {
 
 
     document.querySelectorAll('.graph').forEach((graph) => {
-
+        // graph.innerHTML = "";
         for( let i = 0; i < 52; i++ ){
 
             let graphWeek = document.createElement('ul');
@@ -40,6 +40,9 @@ function ConsistencyPage() {
         <div className="ct" >
             <div className="graph-container">
                 <h1 className="heading">LeetCode Submissions</h1>
+                <div className="graph">
+
+                </div>
                 <div className="graph">
 
                 </div>
