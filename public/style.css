@@ -1,3 +1,11 @@
+:root {
+    --graph-bg: #000;
+    --default-square-bg: #161d22;
+    --level3: darkgreen;
+    --level5: green;
+    --level10: lightgreen;
+}
+
 .landing-page-body {
     height: 100vh;
 }
@@ -15,7 +23,56 @@
     flex-direction: row-reverse;
 }
 
-
 .NavBar a {
     color: white;
+}
+
+.ct {
+    background-color: #212529;
+}
+
+.ct ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.ct .graph-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.ct .graph {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(52, 1.2rem);
+    background: var(--graph-bg);
+    justify-content: center;
+}
+
+.ct .square {
+    width: 10px;
+    height: 10px;
+    background: var(--default-square-bg);
+    margin: 3px 0;
+    border-radius: 2px;
+}
+
+.ct .heading {
+    text-align: center;
+    color: white;
+    font-family: monospace;
+}
+
+.ct [data-value="3"] {
+    background: var(--level3);
+}
+
+.ct [data-value="5"] {
+    background: var(--level5);
+}
+
+.ct [data-value="10"] {
+    background: var(--level10);
 }
