@@ -14,7 +14,7 @@ function run() {
 
 
     document.querySelectorAll('.graph').forEach((graph) => {
-        // graph.innerHTML = "";
+        graph.innerHTML = "";
         for( let i = 0; i < 52; i++ ){
 
             let graphWeek = document.createElement('ul');
