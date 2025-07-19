@@ -1,21 +1,34 @@
+html {
+    height: 100%;
+    font-family: monospace;
+}
+
 :root {
     --graph-bg: #000;
     --default-square-bg: #161d22;
-    --level3: darkgreen;
-    --level5: green;
-    --level10: lightgreen;
+    --level1-2: #c6e48b;
+    --level3-4: #7bc96f;
+    --level5-9: #239a3b;
+    --level10-14: #196127;
+    --level15: #0f4211;
 }
 
 .landing-page-body {
     height: 100vh;
 }
 
+.NavBar .navbar-brand{
+    font-size: 2rem;
+}
+
 .NavBar nav{
-    padding: 1rem;
+    font-size: 2rem;
+    padding: 2rem;
     position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
+
 }
 
 .NavBar div{
@@ -28,26 +41,43 @@
 }
 
 .ct {
+    margin: 0px;
+    padding: 0px;
     background-color: #212529;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .ct ul {
-    padding: 0;
+    padding: .3rem;
     list-style-type: none;
 }
 
-.ct .graph-container {
+.ct .heading{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 6rem;
+    flex-basis: 6rem;
+}
+
+.ct .sub-heading {
+    text-align: center;
+    color: white;
+}
+
+.ct .graphLC {
+    background: var(--graph-bg);
     display: flex;
-    flex-direction: column;
-    height: 100vh;
     justify-content: center;
 }
 
-.ct .graph {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(52, 1.2rem);
+.ct .graphGH {
     background: var(--graph-bg);
+    display: flex;
     justify-content: center;
 }
 
@@ -59,20 +89,30 @@
     border-radius: 2px;
 }
 
-.ct .heading {
-    text-align: center;
-    color: white;
-    font-family: monospace;
+.ct [data-value="-1"] {
+    opacity: 0;
+}
+
+.ct [data-value="0"] {
+    background-color: var(--default-square-bg);
+}
+
+.ct [data-value="1"] {
+    background-color: var(--level1-2);
 }
 
 .ct [data-value="3"] {
-    background: var(--level3);
+    background-color: var(--level3);
 }
 
 .ct [data-value="5"] {
-    background: var(--level5);
+    background-color: var(--level5-9);
 }
 
 .ct [data-value="10"] {
-    background: var(--level10);
+    background-color: var(--level10-14);
+}
+
+.ct [data-value="15"] {
+    background-color: var(--level15);
 }
