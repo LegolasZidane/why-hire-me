@@ -6,11 +6,10 @@ html {
 :root {
     --graph-bg: #000;
     --default-square-bg: #161d22;
-    --level1-2: #c6e48b;
-    --level3-4: #7bc96f;
-    --level5-9: #239a3b;
-    --level10-14: #196127;
-    --level15: #0f4211;
+    --level1: #016620;
+    --level2-4: #109932;
+    --level5-9: #28c244;
+    --level10: #7fe18b;
 }
 
 .landing-page-body {
@@ -82,8 +81,8 @@ html {
 }
 
 .ct .square {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background: var(--default-square-bg);
     margin: 3px 0;
     border-radius: 2px;
@@ -98,11 +97,11 @@ html {
 }
 
 .ct [data-value="1"] {
-    background-color: var(--level1-2);
+    background-color: var(--level1);
 }
 
-.ct [data-value="3"] {
-    background-color: var(--level3);
+.ct [data-value="2"] {
+    background-color: var(--level2-4);
 }
 
 .ct [data-value="5"] {
@@ -110,9 +109,5 @@ html {
 }
 
 .ct [data-value="10"] {
-    background-color: var(--level10-14);
-}
-
-.ct [data-value="15"] {
-    background-color: var(--level15);
+    background-color: var(--level10);
 }

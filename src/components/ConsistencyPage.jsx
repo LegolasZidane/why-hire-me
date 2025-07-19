@@ -2,18 +2,14 @@ import { useEffect } from "react";
 
 function setValue(contribution){
 
-    if( contribution === 0 )
-        return 0;
-    else if( contribution < 3 )
-        return 1;
+    if( contribution === 0 || contribution === 1 )
+        return contribution;
     else if( contribution < 5)
-        return 3;
+        return 2;
     else if( contribution < 10)
         return 5;
-    else if( contribution < 15)
-        return 10;
     else
-        return 15;
+        return 10;
 }
 
 function generateContributions(startDate){
@@ -103,7 +99,7 @@ function makeGraphLC() {
             
             let weekDay = document.createElement('li');
             weekDay.classList.add('square');
-            weekDay.dataset.value = contributions[i][j];
+            weekDay.dataset.value = setValue(contributions[i][j]);
             week.appendChild(weekDay);
         }
         graph.appendChild(week);
