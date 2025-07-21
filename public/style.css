@@ -12,7 +12,7 @@ html {
     --level10: #7fe18b;
 }
 
-.landing-page-body {
+.LandingPage {
     height: 100vh;
 }
 
@@ -39,7 +39,7 @@ html {
     color: white;
 }
 
-.ct {
+.ConsistencyPage {
     margin: 0px;
     padding: 0px;
     background-color: #212529;
@@ -50,12 +50,12 @@ html {
     justify-content: space-evenly;
 }
 
-.ct ul {
+.ConsistencyPage ul {
     padding: .3rem;
     list-style-type: none;
 }
 
-.ct .heading{
+.ConsistencyPage .heading{
     margin: 0;
     text-align: center;
     color: white;
@@ -63,24 +63,24 @@ html {
     flex-basis: 6rem;
 }
 
-.ct .sub-heading {
+.ConsistencyPage .sub-heading {
     text-align: center;
     color: white;
 }
 
-.ct .graphLC {
+.ConsistencyPage .graphLC {
     background: var(--graph-bg);
     display: flex;
     justify-content: center;
 }
 
-.ct .graphGH {
+.ConsistencyPage .graphGH {
     background: var(--graph-bg);
     display: flex;
     justify-content: center;
 }
 
-.ct .square {
+.ConsistencyPage .square {
     width: 15px;
     height: 15px;
     background: var(--default-square-bg);
@@ -88,26 +88,26 @@ html {
     border-radius: 2px;
 }
 
-.ct [data-value="-1"] {
+.ConsistencyPage [data-value="-1"] {
     opacity: 0;
 }
 
-.ct [data-value="0"] {
+.ConsistencyPage [data-value="0"] {
     background-color: var(--default-square-bg);
 }
 
-.ct [data-value="1"] {
+.ConsistencyPage [data-value="1"] {
     background-color: var(--level1);
 }
 
-.ct [data-value="2"] {
+.ConsistencyPage [data-value="2"] {
     background-color: var(--level2-4);
 }
 
-.ct [data-value="5"] {
+.ConsistencyPage [data-value="5"] {
     background-color: var(--level5-9);
 }
 
-.ct [data-value="10"] {
+.ConsistencyPage [data-value="10"] {
     background-color: var(--level10);
 }

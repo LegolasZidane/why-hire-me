@@ -1,6 +1,6 @@
 function LandingPage() {
   return (
-    <div className="landing-page-body d-flex text-center text-bg-dark align-items-center justify-content-center">
+    <div className="LandingPage d-flex text-center text-bg-dark align-items-center justify-content-center">
       <div>
         <h1>Why Hire Me?(Fresher Edition)</h1>
         <p className="lead">

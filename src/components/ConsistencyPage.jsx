@@ -114,7 +114,7 @@ function ConsistencyPage() {
     }, []);
 
     return(
-        <div className="ct" >
+        <div className="ConsistencyPage" >
             <div className="graph-container">
                 <h1 className="heading">LeetCode Submissions</h1>
                 <div className="graphLC">
