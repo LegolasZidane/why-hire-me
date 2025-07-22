@@ -4,8 +4,8 @@ function PDescription(props) {
         <div className="PDescription">
             <h2>{props.title}</h2>
             <p>{props.description}</p>
-            <a href={props.liveLink}></a>
-            <a href={props.githubRepo}></a>
+            <a href={props.liveLink}>Check it out</a><br />
+            <a href={props.githubRepo}>Github Repository</a>
         </div>
     );
 }
