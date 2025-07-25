@@ -118,10 +118,8 @@ function ConsistencyPage() {
             <div className="graph-container">
                 <h1 className="heading">LeetCode Submissions</h1>
                 <div className="graphLC">
-
                 </div>
                 <div className="graphGH">
-
                 </div>
                 <h1 className="heading">GitHub Contributions</h1>
             </div>
