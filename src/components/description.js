@@ -18,6 +18,7 @@ const desc = [
         githubRepo: 'https://github.com/LegolasZidane/family-tracker'
     },
     {
+        
         title: 'Keeper',
         description: 'A minimalist note-taking app to quickly jot down and save thoughts, reminders, or ideas. Inspired by Google Keep, it lets users add, view, and delete notes with a clean, card-style layout.',
         liveLink: 'https://legolaszidane.github.io/keeper-app/',
