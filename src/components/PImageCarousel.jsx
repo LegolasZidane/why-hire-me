@@ -1,5 +1,5 @@
 
-function PImageCarousel() {
+function PImageCarousel(props) {
    
     return (
         <div className="PImageCarousel">
@@ -24,11 +24,11 @@ function PImageCarousel() {
                         </div>
                     </div>
                 </div>
-                <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <a onClick={props.prev} className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="sr-only">Previous</span>
                 </a>
-                <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <a onClick={props.next} className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="sr-only">Next</span>
                 </a>
