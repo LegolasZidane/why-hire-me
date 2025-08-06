@@ -13,11 +13,14 @@ function ProjectsPage(){
             <div className="container">
                 <div className="item">
                     <PDescription 
-                        title={desc[0].title}
-                        description={desc[0].description}
-                        liveLink={desc[0].liveLink}
-                        githubRepo={desc[0].githubRepo}
+                        {...desc[currentP]}
                     />
+                    {/* <PDescription 
+                        title={desc[currentP].title}
+                        description={desc[currentP].description}
+                        liveLink={desc[currentP].liveLink}
+                        githubRepo={desc[currentP].githubRepo}
+                    /> */}
                 </div>
                 <div className="item">
                     <PImageCarousel />
