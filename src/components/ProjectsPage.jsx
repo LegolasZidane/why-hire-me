@@ -15,12 +15,6 @@ function ProjectsPage(){
                     <PDescription 
                         {...desc[currentP]}
                     />
-                    {/* <PDescription 
-                        title={desc[currentP].title}
-                        description={desc[currentP].description}
-                        liveLink={desc[currentP].liveLink}
-                        githubRepo={desc[currentP].githubRepo}
-                    /> */}
                 </div>
                 <div className="item">
                     <PImageCarousel />
